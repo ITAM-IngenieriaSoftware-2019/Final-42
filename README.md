@@ -1,5 +1,4 @@
-﻿
-# Especificación de requerimientos de software
+﻿# Especificación de requerimientos de software
 ## Para el sistema RAPPITAM
 Version 1.0  
 
