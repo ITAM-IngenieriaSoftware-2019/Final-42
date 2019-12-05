@@ -215,13 +215,29 @@ Cada alumno puede visualizar todos los cursos, pero no le debe ser posible dar d
 
 #6.Plan de calidad
 
+En esta sección profundizamos en como mantener la calidad de nuestro codigo por medio de una combinación de herramientas y prácticas que permitan tener una solución robusta y mantenible.
+
 ##6.1 CI/CD
 
 El temrmino CI/CD es un acrónimo para "Continous Integration / Continous Delivery", define la implementación de un pipeline de desarrollo para poder mantener la integridad del producto al añadir nuevas funcionalidades o corregir bugs identificados dentro de la misma.
 
-A coontinuación vemos un ejemplo de un pipeline implemetado con tecnologías líderes en el mercado:
+A continuación vemos un ejemplo de un pipeline implemetado con tecnologías líderes en el mercado:
 
 <center><img src="https://image.slidesharecdn.com/cicdwithjenkinsanddocker1-160815013911/95/cicd-with-jenkins-and-docker-devops-meetup-day-thailand-7-638.jpg?cb=1471229320"></center>
+
+Hagamos un análisis a profundidad de cada uno de los pasos de este pipeline de desarrollo:
+
+- "Commit/build"
+
+En este paso algún developer hace commit y push de sus cambios en código, asumiendo que el equipo tiene una metodología de administración de las tasks por hacer y cada cuando hacer push. El sistema automaticamente registra el commit y recibe la información para ver que la solución continúe íntegra. 
+
+- "Testing"
+
+Para mantener una solución íntegra el sistema corre las pruebas asociadas a los archivos de testing que se hayan definido para ver que ninguno de los cambios rompa algún assert o funcionalidad que se espera se mantenga. Esto permite que automaticamente se evite integrar los cambios antes de que rompa algo de la solución. En caso de que las pruebas sean cumplidas pasa al siguiente eslabón en la cadena.
+
+- "Staging"
+- "Deploy"
+
 ##6.2 Monitoreo de la plataforma
 ##6.3 Administración de tickets
 
