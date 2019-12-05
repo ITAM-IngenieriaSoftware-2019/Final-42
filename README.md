@@ -1,13 +1,13 @@
 ﻿
 # Especificación de requerimientos de software
-## para el sistema RAPPITAM
+## Para el sistema RAPPITAM
 Version 1.0  
 
 Preparado por Alessandro, Sebastian Gonzales and Andrés Cruz  
 
 42-Rapitam
 
-25 Octubre 2019
+6 Diciembre 2019
 
 
 
@@ -100,41 +100,62 @@ Tomando encuenta los dos puntos anteriores, consideramos que una arquitectura mo
 
 #### 4.1.1 Descripción y prioridad
 
-
+En la parte superior de la pantalla hay botones para cambiar entre las pantallas de autentificaión y registro.
+El usuario ingresa un e-mail, contraseña y la confirmación de contraseña, es validado y manda un mensaje de error, o un mensaje de éxito y procede al Marketplace.
+Hay un botón con la opción de iniciar sesión con Facebook.
+Hay un botón con la opción de iniciar sesión con Google.
 
 #### 4.1.2 Secuencias de estímulo y respuesta
 
-
+El botón "SIGN UP" está deshabilitado.
+Al hacer click en el boton "SIGN IN" se redirigirá a la página de autentificación.
+En la pantalla hay 3 cajas de texto donde el usuario ingresará su e-mail, una contraseña y la confirmación de su contraseña, al hacer click en el botón de "Registrarme" el sistema valida la informacíon ingresada y de ser correcta manda un mensaje de éxito y redirige a la página de el Marketplace, de lo contrario muestra un mensaje de error de autentificación.
+Al hacer click en "Log in con Facebook" se iniciará la sesión con Facebook y pasará a la página de marketplace.
+Al hacer click en "Log in con Google" se iniciará la sesión con Google y pasará a la página de marketplace.
 
 #### 4.1.3 Requerimientos funcionales
 
 ##### Requerimiento 1
 
+Al hacer click en el botón "Registrarme" el sistema valida que los campos no estén vacíos, de ser así desplegará un mensaje pidiendo que se proporcione la información reqerida.
 
 ##### Requerimiento 2
 
+Si los campos no están vaciós, el sistema valida que el e-mail no exista en la base de datos, si existe despliega un mensaje de error; de otro modo verifica que ambas contraseñas sean iguales, si no lo son despliega un mensaje de error, en caso conrario guarda la nueva cuenta en la base de datos y redirige al usuario a la página de Marketplace.
 
 ##### Requerimiento 3
+
+Al hacer click en el botón "Log in con Facebook" el sistema se conecta con la API de la aplicación de Facebook para iniciar sesión a travez de ella y proceder a la página de Marketplace.
+
+##### Requerimiento 4
+
+Al hacer click en el botón "Log in con Google" el sistema se conecta con la API de Google para iniciar sesión a travez de ella y proceder a la página de Marketplace.
+
+##### Requerimiento 6
+
+Al hacer click en el botón "SIGN IN" el sistema pasará a la pantalla de autentificación.
 
 
 ### 4.2 Módulo de autentificación
 
 #### 4.2.1 Descripción y prioridad
 
-El usuario ingresa su usuario y contraseña, es validado y manda un mensaje de error o procede al Marketplace.
-
+En la parte superior de la pantalla hay botones para cambiar entre las pantallas de autentificaión y registro.
+El usuario ingresa su e-mail y contraseña, es validado y manda un mensaje de error o procede al Marketplace.
 Hay un botón con la opción de iniciar sesión con Facebook.
 Hay un botón con la opción de iniciar sesión con Google.
 Hay un botón para reestablcer la contraseña.
 
-Prioridad: 
+Prioridad: 2
 
 #### 4.2.2 Secuencias de estímulo y respuesta
 
-En la pantalla hay 2 cajas de texto donde el usuario ingresará su e-mail y contraseña, al hacer click en el botón de "Continue" el sistema valida la informacíon ingresada y de ser correcta redirige a la página de el MArketplace, de lo contrario muestra un mensaje de error de autentificación.
+Al hacer click en el boton "SIGN UP" se redirigirá a la página de registro.
+El botón "SIGN IN" está deshabilitado.
+En la pantalla hay 2 cajas de texto donde el usuario ingresará su e-mail y contraseña, al hacer click en el botón de "Continue" el sistema valida la informacíon ingresada y de ser correcta redirige a la página de el Marketplace, de lo contrario muestra un mensaje de error de autentificación.
 Al hacer click en "Log in con Facebook" se iniciará la sesión con Facebook y pasará a la página de marketplace.
 Al hacer click en "Log in con Google" se iniciará la sesión con Google y pasará a la página de marketplace.
-Al hacer click en el link "Recuperar contraseña" se redirigirá a la página de reestablecer contraseña.
+Al hacer click en el botón "Recuperar contraseña" se redirigirá a la página de reestablecer contraseña.
 
 #### 4.2.3 Requerimientos funcionales
 
@@ -156,7 +177,11 @@ Al hacer click en el botón "Log in con Google" el sistema se conecta con la API
 
 ##### Requerimiento 5
 
-Al hacer click en el link "Recuperar" el sistema redirigirá al usuario a la página de reestablecimiento de contraseñas.
+Al hacer click en el botón "Recuperar" el sistema redirigirá al usuario a la página de reestablecimiento de contraseñas.
+
+##### Requerimiento 6
+
+Al hacer click en el botón "SIGN UP" el sistema pasará a la pantalla de registro.
 
 ### 4.3 Marketplace
 
@@ -166,11 +191,11 @@ Al hacer click en el link "Recuperar" el sistema redirigirá al usuario a la pá
 
 #### 4.3.3 Requerimientos funcionales
 
-##### Requisito 1
+##### Requerimiento 1
 
-##### Requisito 2
+##### Requerimiento 2
 
-##### Requisito 3
+##### Requerimiento 3
 
 ### 4.4 Vista de restaurante
 
