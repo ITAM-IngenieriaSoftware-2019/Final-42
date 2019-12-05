@@ -20,7 +20,8 @@ Preparado por Alessandro, Sebastian Gonzales and Andrés Cruz
 3. [Requerimientos de interfaz externa](#requerimientos-de-interfaz-externa)
 4. [Características del sistema](#características-del-sistema)
 5. [Requerimientos no funcionales](#requerimientos-no-funcionales)
-6. [Otros requerimientos](#otros-requerimientos)
+6. [Plan de calidad](#plan-de-calidad)
+7. [Otros requerimientos](#otros-requerimientos)
 
 ## 1.Introducción
 ### 1.1 Proposito
@@ -212,5 +213,16 @@ La cuenta de cada alumno solo debe poder ser accedida por el mismo. Es muy impor
 ### 5.3 Reglas del negocio
 Cada alumno puede visualizar todos los cursos, pero no le debe ser posible dar de alta materias que no pertenezcan a su plan de estudios o que se den en un horario que choque con una materia previamente seleccionada. Así mismo, cada alumno tiene un límite de materias que puede inscribir definido por su carga académica.
 
+#6.Plan de calidad
+
+##6.1 CI/CD
+
+El temrmino CI/CD es un acrónimo para "Continous Integration / Continous Delivery", define la implementación de un pipeline de desarrollo para poder mantener la integridad del producto al añadir nuevas funcionalidades o corregir bugs identificados dentro de la misma.
+
+A coontinuación vemos un ejemplo de un pipeline implemetado con tecnologías líderes en el mercado:
+
+<center><img src="https://image.slidesharecdn.com/cicdwithjenkinsanddocker1-160815013911/95/cicd-with-jenkins-and-docker-devops-meetup-day-thailand-7-638.jpg?cb=1471229320"></center>
+##6.2 Monitoreo de la plataforma
+##6.3 Administración de tickets
 
 ## Otros requerimientos
