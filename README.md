@@ -87,7 +87,7 @@ En segundo lugar, el primer mercado objetivo de la aplicación son los estudiant
 
 Tomando encuenta los dos puntos anteriores, consideramos que una arquitectura monolítica es la mejor opción para este proyectos por las siguientes razones. Primero, la simplicidad de esta arquitectura permitirá que los ingenieros entiendan como funciona el sistema en conjunto y les permitirá ser útiles en distintos módulos de la aplicación. En segundo lugar, un monolíto asegurará que la tecnología utilizada es uniforme y que, una vez que los ingenieros se adecuen a la tecnología elegida, no habrá curvas de aprendizaje que tomar en cuenta al transitar el código. Por último, la arquitectura monolítica será capaz de atender la carga de alumnos del itam con el conocimiento de que la matricula se mantiene constante año con año y con la posibilidad de replicar el backend con tecnología de contenedores si es que fuera necesario.
 
-<img src="https://ibb.co/BgfJM6c">
+<img src="https://i.ibb.co/JzcTJpm/Web-App-Reference-Architecture-2.png">
 
 ### 2.7 Suposiciones y dependencias
 
