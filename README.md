@@ -395,13 +395,13 @@ La cuenta de cada alumno solo debe poder ser accedida por el mismo. Es muy impor
 ### 5.3 Reglas del negocio
 Cada alumno puede visualizar todos los cursos, pero no le debe ser posible dar de alta materias que no pertenezcan a su plan de estudios o que se den en un horario que choque con una materia previamente seleccionada. Así mismo, cada alumno tiene un límite de materias que puede inscribir definido por su carga académica.
 
-#6.Plan de calidad
+# 6.Plan de calidad
 
-##6.1 CI/CD
+## 6.1 CI/CD
 
-El temrmino CI/CD es un acrónimo para "Continous Integration / Continous Delivery", define la implementación de un pipeline de desarrollo para poder mantener la integridad del producto al añadir nuevas funcionalidades o corregir bugs identificados dentro de la misma.
+El término CI/CD es un acrónimo para "Continous Integration / Continous Delivery", define la implementación de un pipeline de desarrollo para poder mantener la integridad del producto al añadir nuevas funcionalidades o corregir bugs identificados dentro de la misma.
 
-A coontinuación vemos un ejemplo de un pipeline implemetado con tecnologías líderes en el mercado:
+A continuación vemos un ejemplo de un pipeline implemetado con tecnologías líderes en el mercado:
 
 <center><img src="https://image.slidesharecdn.com/cicdwithjenkinsanddocker1-160815013911/95/cicd-with-jenkins-and-docker-devops-meetup-day-thailand-7-638.jpg?cb=1471229320"></center>
 Hagamos un análisis a profundidad de cada uno de los pasos de este pipeline de desarrollo:
