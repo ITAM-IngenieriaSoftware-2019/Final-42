@@ -27,7 +27,7 @@ Preparado por Alessandro, Sebastian Gonzales and Andrés Cruz
 
 ### 1.2 Convenciones del documento
 
-En este documento utilizaremos una escala del 1 al 5 para definir el tamaño de un feature.
+En este documento utilizaremos una escala del 1 al 5 para definir la prioridad de una característica, siendo 1 la mayor prioridad y 5 la menor.
 
 
 ### 1.3 Audiencia objetivo
@@ -37,9 +37,7 @@ Este documento tiene como público objetivo a ingenieros de software. En este se
 
 ### 1.4 Scope del producto
 
-El sistema debe ser desplegado para toda la comunidad estudiantil del itam. Conforme a esto, debe poder atender las peticiones de alta y baja de materias así como las listas de espera. Además, debe permitir la visualización de los cursos para lograr los objetivos anteriores.
-
-
+El sistema debe ser desplegado para toda la comunidad estudiantil del itam. Conforme a esto, debe poder atender los pedidos de los usuarios. Además, debe permitir la visualización de los artículos para lograr los objetivos anteriores.
 
 ## 2 Descripción general
 
@@ -52,15 +50,17 @@ RAPPITAM es una app que permite a los alumnos y personal de ITAM pedir comida a 
 A continuación se presenta una breve descripción de las funcionalidades generales del producto.
 
 - Registro de usuarios
-El usuario es capaz de registrarse en el sistema para iniciar a administrar sus materias.
+El usuario es capaz de registrarse en el sistema para iniciar a hacer pedidos.
 - Login de usuarios
 El usuario es capaz de ingresar al sistema con correo y contraseña porsteriormente a su registro.
-- Alta de materias
-El usuario debe de ser capaz de dar de alta sus materias.
-- Actualización de materias
-El usuario debe de ser capaz de actualizar sus materias.
-- Eliminación de materias
-El usuario debe de ser capaz de dar de baja sus materias.
+- Visualización de Comercios
+El usuario debe de ser capaz de ver los comercios disponibles.
+- Visualización de oferta de productos en los locales.
+El usuario debe de ser capaz de visualizar sus opciones para saber que pedir.
+- Crear un pedido
+El usuario debe de crear un pedido de lo que desea de cada local.
+-Realizar un pago
+El usuario debe ser capaz de pagar pera que se le entregue el pedido.
 - Configuración de perfil
 El usuario debe de ser capaz de modificar la información básica de su perfil
 
@@ -68,10 +68,8 @@ El usuario debe de ser capaz de modificar la información básica de su perfil
 
 A continuación se presenta una breve descripción de los usuarios que van a interactuar con el producto
 
-- Estudiantes de nuevo ingreso
-Nuevos estudiantes en el ITAM, están por cursar su primer semestre en el ITAM y su horario es establecido por control escolar.
-- Estudiantes por egresar
-Estudiantes que no son de primer ingreso, y siguen avanzando en su carrera en el ITAM
+- Estudiantes del ITAM
+Los estudiantes en el ITAM que no pueden salir de clases y su horario es establecido por control escolar, que pueden necesitar pedir algo de comer entregado a su clase.
 
 ### 2.4 Ambiente operativo
 
@@ -79,7 +77,6 @@ Para el proyecto vamos a utilizar una intancia T2 Micro de AWS. Las instancias T
 
 El sistema operativo a utilizar es Linux.
 
-### 2.5 Restricción de diseño e implementación
 ### 2.6 Arquitectura
 
 Para poder definir la arquitectura de RAPPITAM es importante que recapitulemos algunos de las restricciones a las que estará sujeta la aplicación. 
@@ -93,7 +90,9 @@ Tomando encuenta los dos puntos anteriores, consideramos que una arquitectura mo
 
 ### 2.7 Suposiciones y dependencias
 
-## Requerimientos de interfaz externa
+Se asume que la base de datos existe y se puede manejar.
+Se trabaja considerando que las conexiones a las APIs de Facebook, Google y el servicio de pago están implementadas
+
 ## 4 Características del sistema
 
 ### 4.1 Registrarse en el sistema
