@@ -224,7 +224,7 @@ Un botón "Continuar" junto al monto que al ser presionado muestra la pantalla d
 
 #### 4.4.1 Descripción y prioridad
 
-En esta pantalla se muestra una lista con todos los productos disponibles en el comercio respectivo, mostrando su nombre, precio, una pequeña descripción y un botón para agregar uno al pedido.
+En esta pantalla se muestra una lista con todos los artículos disponibles en el comercio respectivo, mostrando su nombre, precio, una pequeña descripción y un botón para agregar uno al pedido.
 Hay un botón para volver al Marketplace.
 En la parte inferior de la pantalla se hay una barra en la que se despliega en el Monto Actual y un botón para pasar al pedido.
 
@@ -255,20 +255,59 @@ Una barra en el fondo en la que se ve el Monto Actual.
 
 Un botón "Continuar" junto al monto que al ser presionado muestra la pantalla de pedido.
 
-### 4.4 Hacer Pedido
+##### Requerimiento 5
 
-#### 4.4.1 Descripción y prioridad
+Al hacer click en el botón Regresar se pasará a la pantalla de Marketplace.
 
-#### 4.4.2 Secuencias de estímulo y respuesta
+### 4.5 Hacer Pedido
 
-#### 4.4.3 Requerimientos funcionales
+#### 4.5.1 Descripción y prioridad
+
+En esta pantalla se muestra una lista con todos los artículos en el Pedido, mostrando su nombre, cantidad, precio y un botón para eliminar; y el total.
+Hay un botón para volver al Marketplace.
+Una lista con las tarjetas guardadas para elegir con cual se realizará el pago.
+Un botón para agregar tarjeta.
+Un botón "Ordenar" para comfirmar la compra, que mostrará un mensaje de éxito si se realiza el pago, o uno de error.
+
+Prioridad: 1
+
+#### 4.5.2 Secuencias de estímulo y respuesta
+
+Al hacer click en el botón de Ordenar, se realizará la transacción; de ser exitosa se le indicará al usuario y se iniciará el Pedido; de lo contrario se desplegará un mensaje de erro y pasará a la pantalla de Markentplace. 
+Al hacer click en el botón de regresar, se pasará a la pantalla del Msrketplace.
+Al hacer click en el botón de eliminar en un artículo se elimina del Pedido, y actualiza el Monto Actual.
+
+#### 4.5.3 Requerimientos funcionales
+
+##### Requerimiento 1
+
+Una lista en la que se muestren los artículos con nombre, precio, cantidad y un botón "-"; y el total del Monto Actual.
+
+##### Requerimiento 2
+
+Al hacer click en eliminar un Artículo éste se elimina del Pedido, y su precio se resta del Monto Actual.
+
+##### Requerimiento 3
+
+Un botón Ordenar que se conecta con el servicio de pago con la transacción, si es exitosa lo reporta al usuario y activa el Pedido, si no muesrta un mensaje de error y pasa a la pantalla de Marketplace.
+
+##### Requerimiento 4
+
+Al hacer click en el botón Regresar se pasará a la pantalla de Marketplace.
+
+### 4.6 Hacer Pedido
+
+#### 4.6.1 Descripción y prioridad
+
+#### 4.6.2 Secuencias de estímulo y respuesta
+
+#### 4.6.3 Requerimientos funcionales
 
 ##### Requerimiento 1
 
 ##### Requerimiento 2
 
 ##### Requerimiento 3
-
 
 ## 5.Requerimientos no funcionales
 ### 5.1 Requerimientos de rendimiento
