@@ -187,15 +187,34 @@ Al hacer click en el botón "SIGN UP" el sistema pasará a la pantalla de regist
 
 #### 4.3.1 Descripción y prioridad
 
+En esta pantalla se muestra una lista con todos los restaurantes y tiendas cercanas al ITAM, mostrando su nombre y rating.
+Hay una barra de búsqueda
+En la parte inferior de la pantalla se hay una barra en la que se despliega enl monto actual y un botón para pasar al pedido.
+
 #### 4.3.2 Secuencias de estímulo y respuesta
+
+Al hacer click en el botón de búsqueda se despliegan en la lista los restaurantes que coincidadn con la búsqueda en su nombre o algún producto que vendan.
+Al arrastrar la lista hacia arriba o abajo se deslizará mosrtrando más opciones.
+Al hacer click en un Restaurante se abrirá la Vista del restaurante correspondinte.
+Al hacer clck en el botón "Continuar" se pasará a la pantalla de Pedido.
 
 #### 4.3.3 Requerimientos funcionales
 
 ##### Requisito 1
 
+Un scroll panel en el que se muestren los comercios disponibles con una imagen, nombre y calificación.
+
 ##### Requisito 2
 
+Una caja te texto para búsqueda y un botón que al ser pesionado envía un querry a la base de datos y despliega los restaurantes resultantes en el panel, o un mensaje indicando que la búsqueda no obtuvo resultados.
+
 ##### Requisito 3
+
+Una barra en el fondo en la que se ve al monto del pedido actual.
+
+##### Requisito 4
+
+Un botón "Continuar" junto al monto que al ser presionado muestra la pantalla de pedido.
 
 ### 4.4 Vista de restaurante
 
