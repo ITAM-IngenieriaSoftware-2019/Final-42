@@ -416,9 +416,11 @@ Para mantener una solución íntegra el sistema corre las pruebas asociadas a lo
 
 - *Staging*
 
-Una vez que los cambios aprueban los tests definidos entra en un ambiente de staging donde s ehace una revisión manual por parte de alguno de los integrantes del quipo, usualmente 
+Una vez que los cambios aprueban los tests definidos entra en un ambiente de staging donde tenemos una versión del producto muy similar a la que el consumido final podrá acceder. Se hace una revisión manual por parte de alguno de los integrantes del equipo para validar que los cambios cumplen con las expectativas deseadas o los cambio deseados. Si es que 
 
 - *Deploy*
+
+Una vez que haya sido aprobada pasa a producción para que los nuevos cambios puedan ser utilizados por parte de los clientes.
 ##6.2 Monitoreo de la plataforma
 ##6.3 Administración de tickets
 
