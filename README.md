@@ -105,6 +105,8 @@ El usuario ingresa un e-mail, contraseña y la confirmación de contraseña, es 
 Hay un botón con la opción de iniciar sesión con Facebook.
 Hay un botón con la opción de iniciar sesión con Google.
 
+Prioridad: 3
+
 #### 4.1.2 Secuencias de estímulo y respuesta
 
 El botón "SIGN UP" está deshabilitado.
@@ -189,7 +191,9 @@ Al hacer click en el botón "SIGN UP" el sistema pasará a la pantalla de regist
 
 En esta pantalla se muestra una lista con todos los restaurantes y tiendas cercanas al ITAM, mostrando su nombre y rating.
 Hay una barra de búsqueda
-En la parte inferior de la pantalla se hay una barra en la que se despliega enl monto actual y un botón para pasar al pedido.
+En la parte inferior de la pantalla se hay una barra en la que se despliega enl Monto Actual y un botón para pasar al pedido.
+
+Prioridad: 3
 
 #### 4.3.2 Secuencias de estímulo y respuesta
 
@@ -200,19 +204,19 @@ Al hacer clck en el botón "Continuar" se pasará a la pantalla de Pedido.
 
 #### 4.3.3 Requerimientos funcionales
 
-##### Requisito 1
+##### Requerimiento 1
 
 Un scroll panel en el que se muestren los comercios disponibles con una imagen, nombre y calificación.
 
-##### Requisito 2
+##### Requerimiento 2
 
 Una caja te texto para búsqueda y un botón que al ser pesionado envía un querry a la base de datos y despliega los restaurantes resultantes en el panel, o un mensaje indicando que la búsqueda no obtuvo resultados.
 
-##### Requisito 3
+##### Requerimiento 3
 
-Una barra en el fondo en la que se ve al monto del pedido actual.
+Una barra en el fondo en la que se ve el Monto Actual.
 
-##### Requisito 4
+##### Requerimiento 4
 
 Un botón "Continuar" junto al monto que al ser presionado muestra la pantalla de pedido.
 
@@ -220,15 +224,36 @@ Un botón "Continuar" junto al monto que al ser presionado muestra la pantalla d
 
 #### 4.4.1 Descripción y prioridad
 
+En esta pantalla se muestra una lista con todos los productos disponibles en el comercio respectivo, mostrando su nombre, precio, una pequeña descripción y un botón para agregar uno al pedido.
+Hay un botón para volver al Marketplace.
+En la parte inferior de la pantalla se hay una barra en la que se despliega en el Monto Actual y un botón para pasar al pedido.
+
+Prioridad: 4
+
 #### 4.4.2 Secuencias de estímulo y respuesta
+
+Al hacer click en el botón de agrgar en un artículo se agrega uno del mismo al Pedido, incrementando el Monto Actual.
+Al arrastrar la lista hacia arriba o abajo se deslizará mosrtrando más opciones.
+Al hacer click en el botón de regresar, se pasará a la pantalla del Msrketplace.
+Al hacer clck en el botón "Continuar" se pasará a la pantalla de Pedido.
 
 #### 4.4.3 Requerimientos funcionales
 
 ##### Requerimiento 1
 
+Un scroll panel en el que se muestren los artículos disponibles con una imagen, nombre, precio, pequeña descripción y un botón "+".
+
 ##### Requerimiento 2
 
+Al hacer click en un Artículo éste se agrega al Pedido, y su precio se suma al Monto Actual.
+
 ##### Requerimiento 3
+
+Una barra en el fondo en la que se ve el Monto Actual.
+
+##### Requerimiento 4
+
+Un botón "Continuar" junto al monto que al ser presionado muestra la pantalla de pedido.
 
 ### 4.4 Hacer Pedido
 
