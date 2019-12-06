@@ -91,6 +91,7 @@ En segundo lugar, el primer mercado objetivo de la aplicación son los estudiant
 
 Tomando encuenta los dos puntos anteriores, consideramos que una arquitectura monolítica es la mejor opción para este proyectos por las siguientes razones. Primero, la simplicidad de esta arquitectura permitirá que los ingenieros entiendan como funciona el sistema en conjunto y les permitirá ser útiles en distintos módulos de la aplicación. En segundo lugar, un monolíto asegurará que la tecnología utilizada es uniforme y que, una vez que los ingenieros se adecuen a la tecnología elegida, no habrá curvas de aprendizaje que tomar en cuenta al transitar el código. Por último, la arquitectura monolítica será capaz de atender la carga de alumnos del itam con el conocimiento de que la matricula se mantiene constante año con año y con la posibilidad de replicar el backend con tecnología de contenedores si es que fuera necesario.
 
+<img src="https://ibb.co/BgfJM6c">
 
 ### 2.7 Suposiciones y dependencias
 
@@ -227,16 +228,19 @@ A continuación vemos un ejemplo de un pipeline implemetado con tecnologías lí
 
 Hagamos un análisis a profundidad de cada uno de los pasos de este pipeline de desarrollo:
 
-- "Commit/build"
+- *Commit/build*
 
 En este paso algún developer hace commit y push de sus cambios en código, asumiendo que el equipo tiene una metodología de administración de las tasks por hacer y cada cuando hacer push. El sistema automaticamente registra el commit y recibe la información para ver que la solución continúe íntegra. 
 
-- "Testing"
+- *Testing*
 
 Para mantener una solución íntegra el sistema corre las pruebas asociadas a los archivos de testing que se hayan definido para ver que ninguno de los cambios rompa algún assert o funcionalidad que se espera se mantenga. Esto permite que automaticamente se evite integrar los cambios antes de que rompa algo de la solución. En caso de que las pruebas sean cumplidas pasa al siguiente eslabón en la cadena.
 
-- "Staging"
-- "Deploy"
+- *Staging*
+
+Una vez que los cambios aprueban los tests definidos entra en un ambiente de staging donde s ehace una revisión manual por parte de alguno de los integrantes del quipo, usualmente 
+
+- *Deploy*
 
 ##6.2 Monitoreo de la plataforma
 ##6.3 Administración de tickets
