@@ -192,6 +192,7 @@ Al hacer click en el botón "SIGN UP" el sistema pasará a la pantalla de regist
 En esta pantalla se muestra una lista con todos los restaurantes y tiendas cercanas al ITAM, mostrando su nombre y rating.
 Hay una barra de búsqueda
 En la parte inferior de la pantalla se hay una barra en la que se despliega enl Monto Actual y un botón para pasar al pedido.
+Un botón Cuenta, que envía a la pantalla de Configuración de Cuenta.
 
 Prioridad: 3
 
@@ -201,6 +202,7 @@ Al hacer click en el botón de búsqueda se despliegan en la lista los restauran
 Al arrastrar la lista hacia arriba o abajo se deslizará mosrtrando más opciones.
 Al hacer click en un Restaurante se abrirá la Vista del restaurante correspondinte.
 Al hacer clck en el botón "Continuar" se pasará a la pantalla de Pedido.
+Al hacer clck en el botón "Cuenta" se pasará a la pantalla de Configuración de cuenta.
 
 #### 4.3.3 Requerimientos funcionales
 
@@ -220,6 +222,10 @@ Una barra en el fondo en la que se ve el Monto Actual.
 
 Un botón "Continuar" junto al monto que al ser presionado muestra la pantalla de pedido.
 
+##### Requerimiento 5
+
+Al presionar el botón Cuenta, se cambiará a la pantalla Configuración de Cuenta.
+
 ### 4.4 Vista de restaurante
 
 #### 4.4.1 Descripción y prioridad
@@ -227,6 +233,7 @@ Un botón "Continuar" junto al monto que al ser presionado muestra la pantalla d
 En esta pantalla se muestra una lista con todos los artículos disponibles en el comercio respectivo, mostrando su nombre, precio, una pequeña descripción y un botón para agregar uno al pedido.
 Hay un botón para volver al Marketplace.
 En la parte inferior de la pantalla se hay una barra en la que se despliega en el Monto Actual y un botón para pasar al pedido.
+Un botón Cuenta, que envía a la pantalla de Configuración de Cuenta.
 
 Prioridad: 4
 
@@ -236,6 +243,7 @@ Al hacer click en el botón de agrgar en un artículo se agrega uno del mismo al
 Al arrastrar la lista hacia arriba o abajo se deslizará mosrtrando más opciones.
 Al hacer click en el botón de regresar, se pasará a la pantalla del Msrketplace.
 Al hacer clck en el botón "Continuar" se pasará a la pantalla de Pedido.
+Al hacer clck en el botón "Cuenta" se pasará a la pantalla de Configuración de cuenta.
 
 #### 4.4.3 Requerimientos funcionales
 
@@ -259,6 +267,10 @@ Un botón "Continuar" junto al monto que al ser presionado muestra la pantalla d
 
 Al hacer click en el botón Regresar se pasará a la pantalla de Marketplace.
 
+##### Requerimiento 6
+
+Al presionar el botón Cuenta, se cambiará a la pantalla Configuración de Cuenta.
+
 ### 4.5 Hacer Pedido
 
 #### 4.5.1 Descripción y prioridad
@@ -268,6 +280,7 @@ Hay un botón para volver al Marketplace.
 Una lista con las tarjetas guardadas para elegir con cual se realizará el pago, por default la última que se usó.
 Un botón para agregar tarjeta.
 Un botón "Ordenar" para comfirmar la compra, que mostrará un mensaje de éxito si se realiza el pago, o uno de error.
+Un botón Cuenta, que envía a la pantalla de Configuración de Cuenta.
 
 Prioridad: 1
 
@@ -277,6 +290,7 @@ Al hacer click en el botón de Ordenar, se realizará la transacción; de ser ex
 Al hacer click en el botón de regresar, se pasará a la pantalla del Msrketplace.
 Al hacer click en el botón de eliminar en un artículo se elimina del Pedido, y actualiza el Monto Actual.
 Al hacer click en el botón de Agregar tejreta, se pasará a la pantalla de Métodos de Pago.
+Al hacer clck en el botón "Cuenta" se pasará a la pantalla de Configuración de cuenta.
 
 #### 4.5.3 Requerimientos funcionales
 
@@ -300,6 +314,10 @@ Un botón Ordenar que, si hay una tarjeta seleccionada, se conecta con el servic
 
 Al hacer click en el botón Regresar se pasará a la pantalla de Marketplace.
 
+##### Requerimiento 6
+
+Al presionar el botón Cuenta, se cambiará a la pantalla Configuración de Cuenta.
+
 ### 4.6 Métodos de pago
 
 #### 4.6.1 Descripción y prioridad
@@ -308,6 +326,8 @@ Una lista con las tarjetas aceptadas.
 Cuatro cajas de texto, para el número de tarjeta, nombre, fecha de vencimiento y ccv.
 Un botón Agregar tarjeta, que agregará la tarjeta a la cuenta del usuario, y lo redirigirá a la pantalla de MArketplace.
 Un botón de regresar, que envía a la pantalla de Msrketplace.
+
+Prioridad: 5
 
 #### 4.6.2 Secuencias de estímulo y respuesta
 
@@ -328,19 +348,41 @@ Al hacer click en el botón Agregar tarjeta se conecta con el servicio de pago y
 
 Al hacer click en el botón Regresar se pasará a la pantalla de Marketplace.
 
-### 4.7 
+### 4.7 Configuración de cuenta
 
 #### 4.7.1 Descripción y prioridad
 
+En esta pantalla se muestra la información de la cuenta del usuario.
+Hay un botón de volver que envía a la pantalla de Marketplace.
+Hay un botón Eliminar cuenta, para borrar la cuenta de la base de datos.
+Hay un botón Reestablecer contraseña, que dirige a la pantalla de recuperación de contraseña.
+
+Prioridad: 5
+
 #### 4.7.2 Secuencias de estímulo y respuesta
+
+Al hacer click en Eliminar cuenta aparece un pop-up con una caja de texto para la contraseña y el botón Confirmar Baja
+Al hacer click en Confirmar Baja, si la contraseña ingresada es correcta, se eliminará la cuenta.
+Al hacer click en el botón de regresar, se pasará a la pantalla del Msrketplace.
+Al hacer click en el botón de reestablecer contraseña, se pasará a la pantalla de recuperación de contraseña.
 
 #### 4.7.3 Requerimientos funcionales
 
 ##### Requerimiento 1
 
+Un panel con la información de la cuenta: correo, número de pedidos, tarjetas asociadas.
+
 ##### Requerimiento 2
 
+Un botón Eliminar cuenta que al ser presionado muestra un pop-up con una caja de texto para la contraseña y el botón Confirmar baja.
+
 ##### Requerimiento 3
+
+Al hacer click en el botón Confirmar baja valida que la contraseña ingresada sea la correcta, de ser así se eliminará la informacion de la cuenta de la base de datos y se mostrará la pantalla de Registro.
+
+##### Requerimiento 4
+
+Al hacer click en el botón Regresar se pasará a la pantalla de Marketplace.
 
 ## 5.Requerimientos no funcionales
 ### 5.1 Requerimientos de rendimiento
